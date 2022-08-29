@@ -1,6 +1,6 @@
-import './App.css';
+import "./App.css";
 import Header from "./Header";
-import ProjectList from './ProjectList';
+import ProjectList from "./ProjectList";
 
 function App() {
   return (

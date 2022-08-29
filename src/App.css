@@ -43,13 +43,13 @@ body {
   text-shadow: 0.1rem 0.1rem 0.2rem black;
 }
 
-.projects-container {
+.project-list-container {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.project-container {
+.project-header-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr 2fr;
   grid-template-areas: 
@@ -58,7 +58,7 @@ body {
   column-gap: 0.5rem;
   row-gap: 0.25rem;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
   border: 0.2rem solid hsla(0, 0%, 0%, 0.5);
   border-radius: 0.25rem;
   background-color: hsl(265, 25%, 55%);
@@ -66,95 +66,91 @@ body {
   text-align: center;
 }
 
-.project-container > * {
-  /* border: 0.1rem solid hsla(39, 100%, 50%, 0.5); */
-}
-
-.project-module-title {
+.project-header-module-title {
   grid-area: module-title;
   font-style: italic;
 }
 
-.project-module-name-container {
+.project-header-module-name-container {
   display: flex;
   align-items: center;
   gap: 0.1rem;
 }
 
-.project-module-name {
+.project-header-module-name {
   grid-area: module-name;
   font-weight: 600;
 }
 
-.project-week-title {
+.project-header-week-title {
   grid-area: week-title;
   font-style: italic;   
 }
 
-.project-week-number {
+.project-header-week-number {
   grid-area: week-number;
   font-weight: 600;
 }
 
-.project-type-title {
+.project-header-type-title {
   grid-area: type-title;
   font-style: italic; 
 }
 
-.project-type-name {
+.project-header-type-name {
   grid-area: type-name;
   font-weight: 600;
 }
 
-.project-syllabus-link-title {
+.project-header-syllabus-link-title {
   grid-area: syllabus-link-title;
   font-style: italic;
 }
 
-.project-syllabus-link {
+.project-header-syllabus-link {
   grid-area: syllabus-link;
   font-weight: 600;
   color: inherit;
 }
 
-.finished-projects-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 2rem;
+.project-body-wrapper {
   border: 0.2rem solid hsla(0, 0%, 0%, 0.5);
   border-radius: 0.25rem;
   background-color: hsl(265, 15%, 60%);
   box-shadow: 0.25rem 0.25rem 0.25rem 0 hsla(0, 0%, 0%, 0.2);
 }
 
-.finished-project-container{
-  /* border: 0.1rem solid hsla(39, 100%, 50%, 0.5); */
+.project-body-container{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
 }
 
-.finished-project-name{
+.project-body-name {
   font-size: 1.4rem;
   font-weight: 600;
-  padding-bottom: 0.5rem;
+  color: hsla(189, 63%, 77%, 1);
+  text-shadow: 0.1rem 0.1rem 0.2rem black;
 }
 
-.finished-project-link-live-container,
-.finished-project-link-code-container {
+.project-body-link-live-container,
+.project-body-link-code-container {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 0.5rem;
 }
 
-.finished-project-link-live-text,
-.finished-project-link-code-text {
+.project-body-link-live-text,
+.project-body-link-code-text {
   font-style: italic;
   font-weight: 500;
   font-size: 0.8rem;
 }
 
-.finished-project-link-live,
-.finished-project-link-code{
+.project-body-link-live,
+.project-body-link-code {
   display: block;
   color: inherit;
   font-family: "Roboto Mono", monospace;
