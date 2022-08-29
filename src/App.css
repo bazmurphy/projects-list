@@ -33,12 +33,13 @@ body {
   grid-template-areas: 
     "module-title week-title type-title syllabus-link-title"
     "module-name week-number type-name syllabus-link";
-  padding: 1rem;
   column-gap: 0.5rem;
   row-gap: 0.25rem;
+  align-items: center;
+  padding: 1rem;
   border: 0.2rem solid hsla(0, 0%, 0%, 0.5);
   border-radius: 0.25rem;
-  background-color: hsl(265, 15%, 55%);
+  background-color: hsl(265, 25%, 55%);
   box-shadow: 0.25rem 0.25rem 0.25rem 0 hsla(0, 0%, 0%, 0.2);
   text-align: center;
 }
@@ -49,24 +50,35 @@ body {
 
 .project-module-title {
   grid-area: module-title;
-  font-style: italic;  
+  font-style: italic;
 }
+
+.project-module-name-container {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+}
+
 .project-module-name {
   grid-area: module-name;
   font-weight: 600;
 }
+
 .project-week-title {
   grid-area: week-title;
   font-style: italic;   
 }
+
 .project-week-number {
   grid-area: week-number;
   font-weight: 600;
 }
+
 .project-type-title {
   grid-area: type-title;
   font-style: italic; 
 }
+
 .project-type-name {
   grid-area: type-name;
   font-weight: 600;
@@ -125,6 +137,13 @@ body {
   color: inherit;
   font-family: "Roboto Mono", monospace;
   font-size: 0.8rem;
+}
+
+.react,
+.node {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
 }
 
 .github,
