@@ -4,6 +4,10 @@ const ProjectBody = (props) => {
 
     return (
         <div className="project-body-container">
+          <div className="project-body-image-container">
+            {props.finishedProjectImage ? <img className="project-body-website-screenshot" src={props.finishedProjectImage} alt="Project Website Screenshot" /> : null }
+          </div>
+          <div className="project-body-information-container">
             <p className="project-body-name">{props.finishedProjectName}</p>
             <div className="project-body-link-live-container">
                 <img className={props.finishedProjectLinkLiveImageClass} src={props.finishedProjectLinkLiveImageSrc} alt={props.finishedProjectLinkLiveImageAlt} />
@@ -15,6 +19,7 @@ const ProjectBody = (props) => {
                 <span className="project-body-link-code-text">Code</span>
                 <a className="project-body-link-code" href={props.finishedProjectLinkCode} target="_blank" rel="noreferrer">{props.finishedProjectLinkCode}</a>
             </div>
+          </div>
         </div>
     );
 
