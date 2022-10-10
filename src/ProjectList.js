@@ -101,13 +101,13 @@ const ProjectList = () => {
                 />
                 <div className="project-body-wrapper">
                     <ProjectBody 
-                        finishedProjectImage=""
+                        finishedProjectImage="./website-screenshots/htmlcss-04.png"
                         finishedProjectName="Cakes Co"
-                        finishedProjectLinkLive=""
+                        finishedProjectLinkLive="https://cyf-bazmurphy-cakes.netlify.app/"
                         finishedProjectLinkLiveImageClass="netlify"
                         finishedProjectLinkLiveImageSrc="./netlify.png"
                         finishedProjectLinkLiveImageAlt="Netlify Logo"
-                        finishedProjectLinkCode=""
+                        finishedProjectLinkCode="https://github.com/bazmurphy/html-css-03"
                         finishedProjectLinkCodeImageClass="github"
                         finishedProjectLinkCodeImageSrc="./github-dark.png"
                         finishedProjectLinkCodeImageAlt="GitHub Logo"
