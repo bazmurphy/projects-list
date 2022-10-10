@@ -783,6 +783,32 @@ const ProjectList = () => {
                     />
                 </div>
             </div>
+            <div className="project-container">
+                <ProjectHeader
+                    moduleName="All"
+                    moduleNameImageClass=""
+                    moduleNameImageSrc=""
+                    moduleNameImageAlt=""
+                    classWorkOrCourseWork="Coursework"
+                    weekNumber="All"
+                    syllabusLink="https://docs.codeyourfuture.io/Leaders/running-the-course/codewars"
+                    projectName="Codewars"
+                />
+                <div className="project-body-wrapper">
+                    <ProjectBody 
+                    finishedProjectImage="./website-screenshots/codewars.png"
+                        finishedProjectName="Codewars Collections"
+                        finishedProjectLinkLive="https://cyf-bazmurphy-codewars.netlify.app"
+                        finishedProjectLinkLiveImageClass="netlify"
+                        finishedProjectLinkLiveImageSrc="./netlify.png"
+                        finishedProjectLinkLiveImageAlt="Netlify Logo"
+                        finishedProjectLinkCode="https://github.com/bazmurphy/codewars-collections"
+                        finishedProjectLinkCodeImageClass="github"
+                        finishedProjectLinkCodeImageSrc="./github-dark.png"
+                        finishedProjectLinkCodeImageAlt="GitHub Logo"
+                    />
+                </div>
+            </div>
 
         </div>
     );
