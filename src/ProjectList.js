@@ -786,9 +786,9 @@ const ProjectList = () => {
             <div className="project-container">
                 <ProjectHeader
                     moduleName="All"
-                    moduleNameImageClass=""
-                    moduleNameImageSrc=""
-                    moduleNameImageAlt=""
+                    moduleNameImageClass="codewars"
+                    moduleNameImageSrc="./codewars.png"
+                    moduleNameImageAlt="Codewars Logo"
                     classWorkOrCourseWork="Coursework"
                     weekNumber="All"
                     syllabusLink="https://docs.codeyourfuture.io/Leaders/running-the-course/codewars"
