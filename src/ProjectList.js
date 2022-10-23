@@ -13,6 +13,34 @@ const ProjectList = () => {
                     moduleNameImageClass="htmlcss"
                     moduleNameImageSrc="./htmlcss.png"
                     moduleNameImageAlt="HTML and CSS Logo"
+                    classWorkOrCourseWork="ClassWork"
+                    weekNumber="1"
+                    syllabusLink="https://syllabus.codeyourfuture.io/html-css/week-1/lesson"
+                    projectName="Bikes"
+                />
+                <div className="project-body-wrapper">
+                    <ProjectBody 
+                        finishedProjectImage="./website-screenshots/htmlcss-01-class.png"
+                        finishedProjectName="Bikes"
+                        finishedProjectLinkLive="https://cyf-bazmurphy-bikes.netlify.app/"
+                        finishedProjectLinkLiveImageClass="netlify"
+                        finishedProjectLinkLiveImageSrc="./netlify.png"
+                        finishedProjectLinkLiveImageAlt="Netlify Logo"
+                        finishedProjectLinkCode="https://github.com/bazmurphy/html-css-bikes"
+                        finishedProjectLinkCodeImageClass="github"
+                        finishedProjectLinkCodeImageSrc="./github-dark.png"
+                        finishedProjectLinkCodeImageAlt="GitHub Logo"
+                    />
+                </div>
+            </div>
+
+
+            <div className="project-container">
+                <ProjectHeader 
+                    moduleName="HTML CSS"
+                    moduleNameImageClass="htmlcss"
+                    moduleNameImageSrc="./htmlcss.png"
+                    moduleNameImageAlt="HTML and CSS Logo"
                     classWorkOrCourseWork="CourseWork"
                     weekNumber="1"
                     syllabusLink="https://syllabus.codeyourfuture.io/html-css/week-1/homework"
