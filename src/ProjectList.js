@@ -1,93 +1,41 @@
 import React from "react";
 import ProjectHeader from "./ProjectHeader";
 import ProjectBody from "./ProjectBody";
+import projectsDatabase from "./database.js";
 
 const ProjectList = () => {
 
     return (
         <div className="project-list-container">
 
+          {projectsDatabase.map((element) => (
             <div className="project-container">
-                <ProjectHeader 
-                    moduleName="HTML CSS"
-                    moduleNameImageClass="htmlcss"
-                    moduleNameImageSrc="./htmlcss.png"
-                    moduleNameImageAlt="HTML and CSS Logo"
-                    classWorkOrCourseWork="ClassWork"
-                    weekNumber="1"
-                    syllabusLink="https://syllabus.codeyourfuture.io/html-css/week-1/lesson"
-                    projectName="Bikes"
+            <ProjectHeader 
+                moduleName={element.projectHeader.moduleName}
+                moduleNameImageClass={element.projectHeader.moduleNameImageClass}
+                moduleNameImageSrc={element.projectHeader.moduleNameImageSrc}
+                moduleNameImageAlt={element.projectHeader.moduleNameImageAlt}
+                classWorkOrCourseWork={element.projectHeader.classWorkOrCourseWork}
+                weekNumber={element.projectHeader.weekNumber}
+                syllabusLink={element.projectHeader.syllabusLink}
+                projectName={element.projectHeader.projectName}
+            />
+            <div className="project-body-wrapper">
+                <ProjectBody 
+                    finishedProjectImage={element.projectBody.finishedProjectImage}
+                    finishedProjectName={element.projectBody.finishedProjectName}
+                    finishedProjectLinkLive={element.projectBody.finishedProjectLinkLive}
+                    finishedProjectLinkLiveImageClass={element.projectBody.finishedProjectLinkLiveImageClass}
+                    finishedProjectLinkLiveImageSrc={element.projectBody.finishedProjectLinkLiveImageSrc}
+                    finishedProjectLinkLiveImageAlt={element.projectBody.finishedProjectLinkLiveImageAlt}
+                    finishedProjectLinkCode={element.projectBody.finishedProjectLinkCode}
+                    finishedProjectLinkCodeImageClass={element.projectBody.finishedProjectLinkCodeImageClass}
+                    finishedProjectLinkCodeImageSrc={element.projectBody.finishedProjectLinkCodeImageSrc}
+                    finishedProjectLinkCodeImageAlt={element.projectBody.finishedProjectLinkCodeImageAlt}
                 />
-                <div className="project-body-wrapper">
-                    <ProjectBody 
-                        finishedProjectImage="./website-screenshots/htmlcss-01-class.png"
-                        finishedProjectName="Bikes"
-                        finishedProjectLinkLive="https://cyf-bazmurphy-bikes.netlify.app/"
-                        finishedProjectLinkLiveImageClass="netlify"
-                        finishedProjectLinkLiveImageSrc="./netlify.png"
-                        finishedProjectLinkLiveImageAlt="Netlify Logo"
-                        finishedProjectLinkCode="https://github.com/bazmurphy/html-css-bikes"
-                        finishedProjectLinkCodeImageClass="github"
-                        finishedProjectLinkCodeImageSrc="./github-dark.png"
-                        finishedProjectLinkCodeImageAlt="GitHub Logo"
-                    />
-                </div>
             </div>
-
-
-            <div className="project-container">
-                <ProjectHeader 
-                    moduleName="HTML CSS"
-                    moduleNameImageClass="htmlcss"
-                    moduleNameImageSrc="./htmlcss.png"
-                    moduleNameImageAlt="HTML and CSS Logo"
-                    classWorkOrCourseWork="CourseWork"
-                    weekNumber="1"
-                    syllabusLink="https://syllabus.codeyourfuture.io/html-css/week-1/homework"
-                    projectName="Blog"
-                />
-                <div className="project-body-wrapper">
-                    <ProjectBody 
-                        finishedProjectImage="./website-screenshots/htmlcss-01.png"
-                        finishedProjectName="Blog"
-                        finishedProjectLinkLive="https://cyf-bazmurphy-blog.netlify.app/"
-                        finishedProjectLinkLiveImageClass="netlify"
-                        finishedProjectLinkLiveImageSrc="./netlify.png"
-                        finishedProjectLinkLiveImageAlt="Netlify Logo"
-                        finishedProjectLinkCode="https://github.com/bazmurphy/html-css-01"
-                        finishedProjectLinkCodeImageClass="github"
-                        finishedProjectLinkCodeImageSrc="./github-dark.png"
-                        finishedProjectLinkCodeImageAlt="GitHub Logo"
-                    />
-                </div>
-            </div>
-
-            <div className="project-container">
-                <ProjectHeader 
-                    moduleName="HTML CSS"
-                    moduleNameImageClass="htmlcss"
-                    moduleNameImageSrc="./htmlcss.png"
-                    moduleNameImageAlt="HTML and CSS Logo"
-                    classWorkOrCourseWork="CourseWork"
-                    weekNumber="2"
-                    syllabusLink="https://syllabus.codeyourfuture.io/html-css/week-2/homework"
-                    projectName="Form Controls"
-                />
-                <div className="project-body-wrapper">
-                    <ProjectBody
-                        finishedProjectImage="./website-screenshots/htmlcss-02.png"
-                        finishedProjectName="Form Controls"
-                        finishedProjectLinkLive="https://cyf-bazmurphy-form.netlify.app/"
-                        finishedProjectLinkLiveImageClass="netlify"
-                        finishedProjectLinkLiveImageSrc="./netlify.png"
-                        finishedProjectLinkLiveImageAlt="Netlify Logo"
-                        finishedProjectLinkCode="https://github.com/bazmurphy/html-css-challenges/tree/main/Form-Controls"
-                        finishedProjectLinkCodeImageClass="github"
-                        finishedProjectLinkCodeImageSrc="./github-dark.png"
-                        finishedProjectLinkCodeImageAlt="GitHub Logo"
-                    />
-                </div>
-            </div>
+        </div>
+        ))}
 
             <div className="project-container">
                 <ProjectHeader 
